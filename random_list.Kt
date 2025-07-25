@@ -13,9 +13,10 @@ fun main() {
     println(sortedIndices)
     println(arr.indices)
     for (index in sortedIndices) {
-//         if (index in arr.indices) {
+   //it checks whether the current index is in original arr.indices
+   if (index in arr.indices) {
             arr.removeAt(index)
-//         }
+      }
     }
 
     println("\nModified array (${arr.size} elements) after deletion:")
