@@ -8,8 +8,8 @@ fun main() {
     val randomIndices = MutableList(25) { Random.nextInt(1, 51) - 1 }
     
     val sortedIndices = randomIndices.sortedDescending()
-    // when we sort in descending order, the index it generated, the array doesn't get shifted
-    // it removes from the back of the array only
+    // when we sort the index in descending order,the array doesn't get shifted
+    // because it removes from the back of the list only
     println(sortedIndices)
     println(arr.indices)
     for (index in sortedIndices) {
