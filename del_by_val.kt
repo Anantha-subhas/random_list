@@ -22,5 +22,8 @@ val arr = arrayListOf<Int>();
 if(del in arr){
     arr.remove(del)
 }
+else{
+    println("element not found")
+}
     println(arr.toString())
 }
