@@ -1,5 +1,8 @@
-fun removeAllOccurrences(arr: IntArray, toRemove: Int): IntArray {
-    return arr.filter { it != toRemove }.toIntArray()
+fun removeAllOccurrences(arr: ArrayList<Int>, toRemove: Int): ArrayList<Int> {
+    arr.removeAll {
+        it == toRemove
+    }
+    return arr
 }
 
 fun main(){
